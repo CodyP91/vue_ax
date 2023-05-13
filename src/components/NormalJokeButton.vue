@@ -1,4 +1,17 @@
 <template>
-    <button @click="$emit('click')">Normal Joke</button>
-  </template>
-  
+  <button @click="setFormat('normal')">Normal Joke</button>
+</template>
+
+<script>
+export default {
+  methods: {
+    setFormat(format) {
+      this.$emit('format', format);
+    },
+  },
+};
+</script>
+
+<style scoped>
+
+</style>
